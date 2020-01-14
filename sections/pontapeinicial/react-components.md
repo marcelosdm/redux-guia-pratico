@@ -59,7 +59,7 @@ const jobs = [
 ];
 
 ReactDOM.render(
-  <App jobs={jobs} onFavorite={() => ()} />,
+  <App jobs={jobs} onFavorite={() => {}} />,
   document.getElementById('root')
 );
 ```
@@ -80,7 +80,6 @@ Note também, que na declaração deste componente, já estamos recebendo os mes
 
 ```javascript
 import React from 'react';
-import './App.css';
 import Jobs from './Jobs';
 
 const App = ({ jobs, onFavorite }) => {
@@ -123,20 +122,19 @@ export default Jobs;
 ```javascript
 import React from 'react';
 
-const Job = ({ job, onFavorite }) => {
-  const { id, name, description, favorite } = job;
-
-  return (
-    <div>
-      <li>
-        {job.name} - {job.description} - {job.favorite}
-        <button type="button" onClick={() => onFavorite(job)}>
-          ⭐ Favorito
-        </button>
-      </li>
-    </div>
-  );
-};
+const Job = ({ job, onFavorite }) => (
+  <div>
+    <li>
+      {job.title} - {job.company} - {job.favorite}
+      <button type="button" onClick={() => onFavorite(job)}>
+        <span role="img" aria-label="star">
+          ⭐
+        </span>
+        Favorito
+      </button>
+    </li>
+  </div>
+);
 
 export default Job;
 ```
