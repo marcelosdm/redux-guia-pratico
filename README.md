@@ -10,10 +10,10 @@ Este guia é baseado neste [excelente artigo](https://www.robinwieruch.de/react-
 
 Aqui estão as informações úteis para que você possa seguir este guia. Nesta sessão, você encontrará os passos para rodar esta aplicação em sua máquina, entre outras.
 
-### Rodando o projeto
+### Iniciando o projeto
 
 Para rodar o projeto, siga os passos abaixo:
 
-1. Clone ou baixe este repositório.
-2. Rode o comando `yarn install`, para instalar todas as dependências do projeto.
-3. Rode o comando `yarn start`, que vai iniciar a aplicação em modo de desenvolvimento, no endereço [http://localhost:3000](http://localhost:3000) (você pode acessar este endereço no browser).
+1. Crie um novo projeto _React_ em sua máquina local. Para isso, utilize o comando `npx create-react-app nome_do_projeto`.
+2. Quando o projeto estiver criado, acesse a pasta, com o comando `cd nome_do_projeto`
+3. Inicie o projeto com o comando `yarn start`. Isto vai fazer a aplicação iniciar em modo de desenvolvimento, no endereço [http://localhost:3000](http://localhost:3000) (você pode acessar este endereço no browser).
