@@ -71,7 +71,7 @@ A princípio, o arquivo ficará da seguinte maneira:
 
 ```javascript
 import { createStore } from 'redux';
-import jobReducer from '../reducers/job';
+import jobReducer from '../reducers/jobReducer';
 
 const store = createStore(jobReducer);
 
