@@ -87,3 +87,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 ```
+
+Repare que na propriedade **jobs**, não referenciamos mais o _state_, pois este agora é utilizado pelo nosso _selector_.
+
+Você pode estar se perguntando qual o motivo de termos criado o _selector_ dos **favoritos**, se nem ao menos o utilizamos. Neste caso, podemos fazer uso dele mais adiante, quando criarmos um _component_ que liste somente os _jobs favoritos_.
