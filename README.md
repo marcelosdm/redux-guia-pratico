@@ -15,6 +15,6 @@ Aqui estão as informações úteis para que você possa seguir este guia. Nesta
 ### Índice
 
 1. [Pontapé inicial](/sections/pontapeinicial/react-components.md)
-2. [Conhecendo o Reducer](/sections/usandoreducer/usando-reducer.md)
+2. [Conhecendo o Reducer](/sections/conhecendoreducer/conhecendo-reducer.md)
 3. [Actions do Redux](/sections/reduxactions/redux-actions.md)
-4. [Seletores do Redux](/sections/seletoresredux/seletores-redux.md)
+   <!-- 4. [Seletores do Redux](/sections/seletoresredux/seletores-redux.md) -->
