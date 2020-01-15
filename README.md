@@ -1,6 +1,6 @@
 # Redux - Guia Prático
 
-![Image of Redux logo](/assets/images/redux-logo.png)
+![Image of Redux logo](/assets/images/guia-pratico.png)
 
 Seja bem-vindo a este guia prático de Redux!
 
