@@ -1,5 +1,7 @@
 # Redux - Guia Prático
 
+![Image of Redux logo](/assets/images/redux-logo.png)
+
 Seja bem-vindo a este guia prático de Redux!
 
 A intenção deste guia é te dar uma noção básica e prática de como utilizar o Redux. Sugestões são sempre bem-vindas!
