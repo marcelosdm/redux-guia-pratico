@@ -1,4 +1,4 @@
-# Redux Actions
+# Actions do Redux
 
 Nesta sessão, vamos _despachar_ nossa primeira **action**! Para ser bem claro, esta _action_ vai armazenar um job favorito pelo seu respectivo **id**, em uma lista. Esta _action_ será capturada pelo **favoriteReducer**.
 

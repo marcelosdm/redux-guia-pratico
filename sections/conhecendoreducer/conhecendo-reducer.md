@@ -1,4 +1,4 @@
-# Usando Reducer
+# Conhecendo o Reducer
 
 > O **Reducer** é uma função _pura_, que executa o estado anterior e uma ação, e retorna o próximo estado. É chamado de **reducer**, porque é o tipo de função que você passaria para o _Array.prototype_.
 
