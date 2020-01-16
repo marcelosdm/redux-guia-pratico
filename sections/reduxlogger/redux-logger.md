@@ -32,4 +32,4 @@ Isso é tudo! Agora, toda vez que a aplicação disparar uma **action**, teremos
 
 Abaixo, uma demonstração de como o log é exibido, após clicarmos no botão favorito de um item da nossa lista:
 
-![redux-logger](../../assets/images/redux-logger.png)
+![redux-logger](../../assets/images/logger.png)
