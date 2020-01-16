@@ -140,3 +140,5 @@ export default Job;
 ```
 
 Quando rodar a aplicação novamente, você verá as _tão faladas_ propriedades aparecerem na página!
+
+![jobs](../../assets/images/jobs.png)

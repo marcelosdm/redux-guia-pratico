@@ -29,3 +29,7 @@ export default store;
 Repare que o segundo argumento do método _createStore()_ é **undefined**, pois ele é utilizado pelo _estado inicial_ da _Redux store_. Como nós trabalhamos com esse _estado inicial_ nos **reducers**, não há necessidade de definí-lo aqui.
 
 Isso é tudo! Agora, toda vez que a aplicação disparar uma **action**, teremos um log no console do browser.
+
+Abaixo, uma demonstração de como o log é exibido, após clicarmos no botão favorito de um item da nossa lista:
+
+![redux-logger](../../assets/images/redux-logger.png)
