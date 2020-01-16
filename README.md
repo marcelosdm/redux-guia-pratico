@@ -19,3 +19,4 @@ Aqui estão as informações úteis para que você possa seguir este guia. Nesta
 3. [Actions do Redux](/sections/reduxactions/redux-actions.md)
 4. [Seletores do Redux](/sections/seletoresredux/seletores-redux.md)
 5. [Redux Logger](/sections/reduxlogger/redux-logger.md)
+6. [Action Creators](/sections/actioncreators/action-creators.md)
