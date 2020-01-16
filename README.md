@@ -20,3 +20,4 @@ Aqui estão as informações úteis para que você possa seguir este guia. Nesta
 4. [Seletores do Redux](/sections/seletoresredux/seletores-redux.md)
 5. [Redux Logger](/sections/reduxlogger/redux-logger.md)
 6. [Action Creators](/sections/actioncreators/action-creators.md)
+7. [Conectando React com Redux](/sections/conectandoreactcomredux/conectando-react-com-redux.md)
