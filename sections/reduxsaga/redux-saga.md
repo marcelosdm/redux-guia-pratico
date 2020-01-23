@@ -169,7 +169,7 @@ class SearchJobs extends Component {
   onSubmit(event) {
     const { query } = this.state;
     if (query) {
-      this.props.onFetchJobs(query);
+      this.props.fetchJobs(query);
 
       this.setState({ query: '' });
     }
@@ -214,23 +214,22 @@ export default connect(null, mapDispatchToProps)(SearchJobs);
 
 ```javascript
 import React from 'react';
+import Jobs from './Jobs';
+import SearchJobs from './SearchJobs';
 
-    import Jobs from './Jobs';
-    **import SearchJobs from './SearchJobs';**
+const App = () => {
+  return (
+    <div className="App">
+      <div>
+        <SearchJobs />
+      </div>
+      <h1>Redux Practice</h1>
+      <Jobs />
+    </div>
+  );
+};
 
-    const App = () => {
-      return (
-        <div className="App">
-          <div>
-            <SearchJobs />
-          </div>
-          <h1>Redux Practice</h1>
-          <Jobs />
-        </div>
-      );
-    };
-
-    export default App;
+export default App;
 ```
 
 Reinicie a aplicação, e faça um teste no browser, buscando por "_React_" ou "_Spring_" e veja os resultados.
