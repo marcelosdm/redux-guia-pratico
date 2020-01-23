@@ -233,3 +233,43 @@ export default App;
 ```
 
 Reinicie a aplicação, e faça um teste no browser, buscando por "_React_" ou "_Spring_" e veja os resultados.
+
+Não funcionou, né?!
+
+### Lidando com CORS
+
+Neste ponto, obtivemos um erro de [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)!
+
+![cors](/assets/images/cors.png)
+
+Mas a dúvida que não quer calar é: como resolver um problema desses, se estamos desenvolvendo uma aplicação _client-side_?
+
+Para tal problema, a solução se encontra na documentação do **create-react-app**, [neste link](https://create-react-app.dev/docs/proxying-api-requests-in-development/).
+
+No nosso caso, na prática, faremos o seguinte:
+
+- No arquivo **package.json**, adicione a seguinte linha: `"proxy": "https://jobs.github.com"`
+
+```json
+{
+  "name": "junior-jobs",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "https://jobs.github.com",
+  ...
+  // restante do código
+```
+
+Veja que a propriedade **proxy**, recebe a URL base da API que estamos fazendo nossas requests.
+
+- No arquivo **job.js**, do diretório **src/sagas/**, altere a variável **BASE_URL** para que fique da seguinte maneira:
+
+```javascript
+const BASE_URL = `/positions.json?page=1&search=${query}`;
+```
+
+Repare que agora nossa variável **BASE_URL** apenas _complementa_ a URL da API.
+
+- Rode novamente sua aplicação, faça uma busca por algum termo (por exemplo _React_) e veja os resultados aparecerem na tela!
+
+![results](/assets/images/results.png)
