@@ -23,3 +23,4 @@ Aqui estão as informações úteis para que você possa seguir este guia. Nesta
 7. [Conectando React com Redux](/sections/conectandoreactcomredux/conectando-react-com-redux.md)
 8. [Lift Connection](/sections/liftconnection/lift-connection.md)
 9. [Redux Saga](/sections/reduxsaga/redux-saga.md)
+10. [Separação da Lógica da API](/sections/apilogic/api-logic.md)
