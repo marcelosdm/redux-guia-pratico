@@ -256,7 +256,7 @@ No nosso caso, na prática, faremos o seguinte:
   "version": "0.1.0",
   "private": true,
   "proxy": "https://jobs.github.com",
-  ...
+
   // restante do código
 ```
 
