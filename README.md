@@ -24,3 +24,4 @@ Aqui estão as informações úteis para que você possa seguir este guia. Nesta
 8. [Lift Connection](/sections/liftconnection/lift-connection.md)
 9. [Redux Saga](/sections/reduxsaga/redux-saga.md)
 10. [Separação da Lógica da API](/sections/apilogic/api-logic.md)
+11. [Manipulando Erros](/sections/manipulando/manipulando-erros.md)

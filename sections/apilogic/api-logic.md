@@ -30,7 +30,7 @@ const BASE_URL = `/positions.json?page=1&search=${query}`;
 const fetchJobs = query =>
   fetch(BASE_URL + query).then(response => response.json());
 
-export { handleFetchJobs };
+export { fetchJobs };
 ```
 
 Pronto! Rode novamente o app e veja tudo funcionando!
