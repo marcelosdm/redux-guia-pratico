@@ -119,7 +119,7 @@ export const jobReducer = (state = INITIAL_STATE, action) => {
 O **job selector** agora é um objeto complexo com uma lista de jobs e um objeto de erro. Além disso, podemos adicionar um segundo _selector_ no arquivo **src/selectors/job.js** para selecionar o objeto de erro. Ele será usado posteriormente em um componente:
 
 ```javascript
-export const getAllJobs = ({ jobState }) => jobState;
+export const getAllJobs = ({ jobState }) => jobState.jobs;
 
 export const fetchError = ({ jobState }) => jobState.error;
 ```
@@ -134,7 +134,7 @@ import Job from './Job';
 
 const Jobs = ({ jobs, error }) => (
   <div>
-  {error && <p>Algo deu errado...</p>}
+    {error && <p>Algo deu errado...</p>}
     {(jobs || []).map(job => (
       <Job key={job.id} job={job} />
     ))}
@@ -142,14 +142,17 @@ const Jobs = ({ jobs, error }) => (
 );
 
 const mapStateToProps = state => ({
-  jobs: getAllJobs(state)
+  jobs: getAllJobs(state),
   error: fetchError(state)
 });
 
 export default connect(mapStateToProps)(Jobs);
-
 ```
 
 No browser, nas ferramentas de desenvolvedor, podemos simular uma perda de conexão para testar o erro e vê-lo em ação:
 
 ![developer-tools](../../assets/images/developer-tools.png)
+
+Ao tentar realizar uma chamada na API externa, buscando por algum termo, recebemos a mensagem de erro:
+
+![offline](../../assets/images/offline.png)
