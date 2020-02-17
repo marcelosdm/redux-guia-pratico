@@ -10,6 +10,8 @@ Mas procurando na [documentação](https://redux.js.org/basics/reducers/), podem
 
 Sendo assim, vamos praticar e entender melhor como funciona.
 
+Resumindo, os **Reducers** produzem o **estado** (*state*) da aplicação.
+
 ## Mão na massa
 
 ### Criando o Reducer
